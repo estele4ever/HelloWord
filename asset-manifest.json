@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/HelloWord/static/css/main.b2d9bbf1.css",
-    "main.js": "/HelloWord/static/js/main.6fdef81f.js",
+    "main.css": "/HelloWord/static/css/main.63933d5d.css",
+    "main.js": "/HelloWord/static/js/main.d2a0fbba.js",
     "static/js/453.54dbb9b2.chunk.js": "/HelloWord/static/js/453.54dbb9b2.chunk.js",
     "index.html": "/HelloWord/index.html",
-    "main.b2d9bbf1.css.map": "/HelloWord/static/css/main.b2d9bbf1.css.map",
-    "main.6fdef81f.js.map": "/HelloWord/static/js/main.6fdef81f.js.map",
+    "main.63933d5d.css.map": "/HelloWord/static/css/main.63933d5d.css.map",
+    "main.d2a0fbba.js.map": "/HelloWord/static/js/main.d2a0fbba.js.map",
     "453.54dbb9b2.chunk.js.map": "/HelloWord/static/js/453.54dbb9b2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b2d9bbf1.css",
-    "static/js/main.6fdef81f.js"
+    "static/css/main.63933d5d.css",
+    "static/js/main.d2a0fbba.js"
   ]
 }

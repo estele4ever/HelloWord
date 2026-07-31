@@ -1,0 +1,168 @@
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 40px;
+  background: linear-gradient(135deg, #3a1c71 0%, #d76d77 50%, #ffaf7b 100%);
+  min-height: 100vh;
+  width: 100%;
+}
+
+.panel {
+  background: white;
+  padding: 15px 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.status-message {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: #f0f0f0;
+  color: #333;
+}
+
+.status-message.check {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status-message.over {
+  background: #d4edda;
+  color: #155724;
+}
+
+.restart-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  background: linear-gradient(135deg, #4caf50, #388e3c);
+  color: white;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  border: 4px solid #333;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.square {
+  width: 56px;
+  height: 56px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+}
+
+.light {
+  background: #f0d9b5;
+}
+
+.dark {
+  background: #b58863;
+}
+
+.selected {
+  background: #7fc97f;
+}
+
+.lastMove {
+  background: #f7ec74;
+}
+
+.dark.lastMove {
+  background: #d7c74a;
+}
+
+.piece {
+  font-size: 36px;
+  line-height: 1;
+  user-select: none;
+}
+
+.dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.25);
+  position: absolute;
+}
+
+/* Tablettes */
+@media (max-width: 768px) {
+  .game {
+    padding: 20px;
+  }
+
+  .square {
+    width: 44px;
+    height: 44px;
+  }
+
+  .piece {
+    font-size: 28px;
+  }
+}
+
+/* Smartphones */
+@media (max-width: 480px) {
+  .game {
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .panel {
+    padding: 12px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .square {
+    width: 36px;
+    height: 36px;
+  }
+
+  .piece {
+    font-size: 22px;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
+
+  .status-message {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}
+
+/* Très petits écrans */
+@media (max-width: 360px) {
+  .square {
+    width: 30px;
+    height: 30px;
+  }
+
+  .piece {
+    font-size: 18px;
+  }
+}

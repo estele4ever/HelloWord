@@ -4,6 +4,8 @@ import Pendu from './pendu/game';
 import Demineur from './demineur/game';
 import Sudoku from './sudoku/game';
 import Echecs from './echecs/game';
+import Snake from './snake/game';
+import Tetris from './tetris/game';
  import './App.css';
 
 const GAMES = {
@@ -12,6 +14,8 @@ const GAMES = {
   demineur: { label: 'Démineur', component: Demineur },
   sudoku: { label: 'Sudoku', component: Sudoku },
   echecs: { label: 'Échecs', component: Echecs },
+  Snake: { label: 'Snake', component: Snake },
+  tetris: { label: 'Tetris', component: Tetris },
 };
 
 export default function App() {

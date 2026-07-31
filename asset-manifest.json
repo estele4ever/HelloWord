@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/HelloWord/static/css/main.b2d9bbf1.css",
+    "main.js": "/HelloWord/static/js/main.6fdef81f.js",
+    "static/js/453.54dbb9b2.chunk.js": "/HelloWord/static/js/453.54dbb9b2.chunk.js",
+    "index.html": "/HelloWord/index.html",
+    "main.b2d9bbf1.css.map": "/HelloWord/static/css/main.b2d9bbf1.css.map",
+    "main.6fdef81f.js.map": "/HelloWord/static/js/main.6fdef81f.js.map",
+    "453.54dbb9b2.chunk.js.map": "/HelloWord/static/js/453.54dbb9b2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b2d9bbf1.css",
+    "static/js/main.6fdef81f.js"
+  ]
+}

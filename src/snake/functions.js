@@ -20,15 +20,23 @@ export function getInitialSnake() {
     { row: center, col: center - 2 },
   ];
 }
-
 export function getRandomFoodPosition(snake) {
-  let position;
-  do {
+  function isOnSnake(pos) {
+    return snake.some((segment) => segment.row === pos.row && segment.col === pos.col);
+  }
+
+  let position = {
+    row: Math.floor(Math.random() * GRID_SIZE),
+    col: Math.floor(Math.random() * GRID_SIZE),
+  };
+
+  while (isOnSnake(position)) {
     position = {
       row: Math.floor(Math.random() * GRID_SIZE),
       col: Math.floor(Math.random() * GRID_SIZE),
     };
-  } while (snake.some((segment) => segment.row === position.row && segment.col === position.col));
+  }
+
   return position;
 }
 

@@ -6,7 +6,10 @@ import Sudoku from './sudoku/game';
 import Echecs from './echecs/game';
 import Snake from './snake/game';
 import Tetris from './tetris/game';
- import './App.css';
+import Welcome from './components/Welcome/Welcome';
+import Footer from './components/Footer/Footer';
+import PrivacyPolicy from './components/PrivacyPolicy/PrivacyPolicy';
+import './App.css';
 
 const GAMES = {
   morpion: { label: 'Morpion', component: Morpion },
@@ -14,12 +17,13 @@ const GAMES = {
   demineur: { label: 'Démineur', component: Demineur },
   sudoku: { label: 'Sudoku', component: Sudoku },
   echecs: { label: 'Échecs', component: Echecs },
-  Snake: { label: 'Snake', component: Snake },
+  snake: { label: 'Snake', component: Snake },
   tetris: { label: 'Tetris', component: Tetris },
 };
 
 export default function App() {
   const [selectedGame, setSelectedGame] = useState(null);
+  const [showPrivacyPolicy, setShowPrivacyPolicy] = useState(false);
   const SelectedComponent = selectedGame ? GAMES[selectedGame].component : null;
 
   return (
@@ -35,13 +39,14 @@ export default function App() {
           </button>
         ))}
       </div>
-      {SelectedComponent && <SelectedComponent />}
+
+      {SelectedComponent ? <SelectedComponent /> : <Welcome />}
+
+      <Footer onShowPrivacyPolicy={() => setShowPrivacyPolicy(true)} />
+
+      {showPrivacyPolicy && (
+        <PrivacyPolicy onClose={() => setShowPrivacyPolicy(false)} />
+      )}
     </div>
   );
 }
-
-//package.json ligne 5 : 
-  // "homepage": "https://estele4ever.github.io/HelloWord",
-  //lignes 22 et 23 :
-  // "predeploy": "npm run build",
-  // "deploy": "gh-pages -d build"

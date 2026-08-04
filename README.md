@@ -69,3 +69,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # HelloWord
+
+
+//package.json ligne 5 : 
+  // "homepage": "https://estele4ever.github.io/HelloWord",
+  //lignes 22 et 23 :
+  // "predeploy": "npm run build",
+  // "deploy": "gh-pages -d build"

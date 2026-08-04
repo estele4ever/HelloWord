@@ -39,3 +39,9 @@ export default function App() {
     </div>
   );
 }
+
+//package.json ligne 5 : 
+  // "homepage": "https://estele4ever.github.io/HelloWord",
+  //lignes 22 et 23 :
+  // "predeploy": "npm run build",
+  // "deploy": "gh-pages -d build"
